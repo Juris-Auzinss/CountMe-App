@@ -36,6 +36,8 @@ class App {
     btnNewCounter.classList.remove('hidden');
     this.#counters = [];
     this.#step = 1;
+    btnNewCounter.classList.remove('btn--subcounter');
+    btnNewCounter.textContent = '💠 New Counter';
   };
 
   //MAKE A NEW COUNTER
