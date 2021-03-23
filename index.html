@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>CountMe Tally</title>
+  </head>
+  <body>
+    <nav>
+      <img src="logo.png" alt="Logo" class="logo" />
+      <p class="welcome">Let's Count Your Stuff</p>
+      <button class="btn btn--newcounter">💠 New Counter</button>
+    </nav>
+    <main class="app">
+      <ul class="counter counter--container" data-id="x">
+        <div class="counter numbers--container">
+          <span class="number counter__million">0</span>
+          <span class="number counter__hundredthousand">0</span>
+          <span class="number counter__tenthousand">0</span>
+          <span class="number counter__thousand">0</span>
+          <span class="number counter__hundred">0</span>
+          <span class="number counter__decimal">2</span>
+          <span class="number counter__single">1</span>
+        </div>
+        <div class="counter counter--options">
+          <form class="counter--name">
+            <label class="name__label">Name:</label>
+            <input
+              class="name__input counter__input--name"
+              placeholder="name"
+            />
+            <p class="name hidden">Name from input</p>
+          </form>
+          <div class="button--countainer">
+            <button class="btn btn--add">➕</button>
+            <button class="btn btn--subtract">➖</button>
+            <button class="btn btn--clear">⭕</button>
+          </div>
+        </div>
+      </ul>
+    </main>
+  </body>
+</html>
