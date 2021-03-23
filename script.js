@@ -46,7 +46,8 @@ class App {
     // btnNewCounter.classList.add("hidden");
     // console.log(this.#counters);
     this._displayCounters(this.#counters);
-    this._nameCounter(this.#counters);
+    btnNewCounter.classList.add('btn--subcounter');
+    btnNewCounter.textContent = '💠 New Sub-Counter';
   };
 
   //ALL BUTTON LISTENING AND DELIGATION to theyr sub functions:
